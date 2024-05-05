@@ -1,4 +1,9 @@
 /* Main */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body{
   box-sizing: border-box;
   margin: 0;
@@ -9,54 +14,40 @@ body{
 }
 
 /* Poster */
-
-.poster-background {
-  position: relative;
-  z-index: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: brown;
-}
 .poster {
-  position: absolute; 
-  z-index: 8;
-  width: 70%;
-  height: 120%;
+position: relative;
+width: 50%;
+z-index: 0;
   background-color: burlywood;
 
 }
 
 /* Poster items */
 
-.poster-items {
-}
-.letters{
-  font-weight: 900;
-}
 .letter-one {
+  position: absolute;
+  font-size: 100px;
+  line-height: 1px;
+  margin: 0px;
+  padding-top: 0px;
+  z-index: 10;
 
-  line-height: 0px;
-  font-size: 500px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
 }
 .letter-two {
   position: absolute;
-  z-index: 0;
+  z-index: 10;
 }
 .letter-three {
   position: absolute;
-  z-index: 0;
+  z-index: 10;
 }
 .letter-four {
   position: absolute;
-  z-index: 0;
+  z-index: 10;
 }
 .texture-text {
   position: absolute;
-  z-index: 4;
+  z-index: 10;
  font-size: 10px;
 width: 80%;
 word-break: break-all;
@@ -64,14 +55,14 @@ word-break: break-all;
 }
 .phrase {
   position: absolute;
-  z-index: 4;
+  z-index: 10;
 }
 
 
 
 .menu {
   position: relative;
-  z-index: 6;
+  z-index: 14;
   width: 50%;
   height: 100vh;
   background-color: grey;
