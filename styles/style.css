@@ -18,28 +18,22 @@ body{
 /* Poster */
 .poster {
 position: relative;
-width: 45%;
+width: 48%;
 z-index: 0;
 /* Параметры для рандома */
   background-color: rgb(199, 157, 103);
-
 }
 
 /* Poster items */
 
-.poster {
-
-}
-.poster-letters {
-}
 .letter-one {
   position: absolute;
 
    /* Параметры для рандома */
    z-index: 2;
-  top: -30%;
-  left: -40%;
-  font-size: 6000%;
+  top: -40%;
+  left: -20%;
+  font-size: 5000%;
   color: rgb(49, 49, 84);
  
 }
@@ -47,7 +41,7 @@ z-index: 0;
   position: absolute;
   z-index: 2;
    /* Параметры для рандома */
-  top: -30%;
+  top: -20%;
   left: 30%;
   font-size: 3000%;
   color: rgb(79, 105, 60);
@@ -72,6 +66,7 @@ z-index: 0;
   font-size: 6000%;
   color: rgb(101, 67, 36);
 }
+
 .texture-text {
   position: absolute;
   min-width: 70%;
@@ -109,16 +104,75 @@ z-index: 0;
   top: 5%;
   left: 60%;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 20px;
 
 
 }
 
+/* Правая часть */
 
 .menu {
   position: relative;
   z-index: 14;
-  width: 60%;
+  width: 52%;
   height: 100vh;
-  background-color: grey;
+  background-color: rgb(178, 177, 177);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  padding-left: 7%;
+  padding-top:6%;
+}
+.header {
+
+}
+.header-title {
+  margin-bottom: 1%;
+}
+.header-rules {
+  margin-left: 2%;
+  line-height: 130%;
+  font-size: 50%;
+  color: rgb(109, 108, 108);
+  font-weight: 500;
+}
+
+/* Поле настроек */
+.settings {
+  font-weight: normal;
+  margin-top: 4%;
+  margin-left: -5%;
+  font-size: 50%;
+}
+th{
+  text-align: left;
+}
+.settings-table {
+  border-collapse: separate;
+  border-spacing: 2em;
+  line-height: 20%;
+}
+
+/* Настройка ввода больших букв */
+
+.big-letters-settings{
+  list-style-type: none;
+  margin-left: 5%;
+  margin-top: 3%;
+  line-height: 220%;
+}
+.big-letters-title {
+font-weight: 600;
+}
+.input-big-letters {
+}
+.big-letters-settings-item {
+}
+
+.footer{
+margin-top: 20%;
+font-size: 50%;
+color: grey;
+}
+.footer-text{
+
 }
