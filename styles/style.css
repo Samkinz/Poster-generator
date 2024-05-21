@@ -105,11 +105,10 @@ z-index: 0;
   left: 60%;
   color: rgb(255, 255, 255);
   font-size: 20px;
-
-
 }
 
 /* Правая часть */
+
 
 .menu {
   position: relative;
@@ -120,7 +119,7 @@ z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 200%;
   padding-left: 7%;
-  padding-top:6%;
+  padding-top:3%;
 }
 .header {
 
@@ -129,7 +128,6 @@ z-index: 0;
   margin-bottom: 1%;
 }
 .header-rules {
-  margin-left: 2%;
   line-height: 130%;
   font-size: 50%;
   color: rgb(109, 108, 108);
@@ -139,40 +137,85 @@ z-index: 0;
 /* Поле настроек */
 .settings {
   font-weight: normal;
+  line-height: 100%;
   margin-top: 4%;
   margin-left: -5%;
   font-size: 50%;
 }
+input[type='checkbox']{
+  transform: scale(1.5);
+  accent-color: #d13b7b;
+}
+
+
 th{
   text-align: left;
 }
 .settings-table {
-  border-collapse: separate;
-  border-spacing: 2em;
-  line-height: 20%;
+  border-spacing: 1.8em;
 }
 
 /* Настройка ввода больших букв */
 
-.big-letters-settings{
+.phrase-settings {
   list-style-type: none;
-  margin-left: 5%;
+  margin-left: 4%;
+  margin-top: 2%;
+  
+}
+.phrase-settings-title {
+  font-weight: 600;
+}
+
+input[type='text']::placeholder{
+  accent-color: #d13b7b;
+  font-size: 70%;
+  padding-left: 2%;
+}
+.phrase-placeholder {
+  margin-top: 2% ;
+  margin-left: 12%;
+  transform: scale(1.5);
+  width: 20em;
+  height: 30%;
+}
+
+.phrase-settings-get-random {
   margin-top: 3%;
-  line-height: 220%;
 }
-.big-letters-title {
-font-weight: 600;
+.phrase-settings-get-random-text{
+  font-weight: normal;
 }
-.input-big-letters {
+
+.clear-generate-buttons {
+  margin-top: 3%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 57%;
+  height: 40%;
 }
-.big-letters-settings-item {
+.clear-all-settings-button {
+  margin-left: -1em;
+  margin-top: 5%;
+height: 3em;
+width: 28em;
+
+}
+.generate-result {
+  margin-left: -1em;
+  margin-top: 5%;
+height: 6em;
+width: 28em;
 }
 
 .footer{
-margin-top: 20%;
-font-size: 50%;
+  position: absolute;
+  left: 12%;
+  bottom: 3%;
+font-size: 30%;
 color: grey;
 }
 .footer-text{
-
 }
+

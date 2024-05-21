@@ -24,13 +24,11 @@
 </p>
 <p class="phrase">Just do it later</p>
 </aside>
+
     <article class="menu">
       <header class="header">
         <p class="header-title">Poster generator</p>
-        <ul class="header-rules">
-          <li>press space to generate</li>
-          <li>check the box to fix the element result</li>
-        </ul>
+          <p class="header-rules"> > check the box to fix the result </p>
       </header>
       <main class="settings">
         <article class="settings-window">
@@ -44,44 +42,52 @@
             </tr>
             <tr>
             <td class="table-name">Background</td>
-            <td>BC</td>
+            <td><input type="checkbox" id="background-color"></td>
             <td></td>
             <td></td>
-            <td>BH</td>
+            <td> <input type="checkbox" id="background-hide"></td>
             </tr>
             <tr>
             <td class="table-name">Big letters</td>
-            <td>BLC</td>
-            <td>BLS</td>
-            <td>BLP</td>
-            <td>BLH</td>
+            <td> <input type="checkbox" id="big-letters-color"></td>
+            <td><input type="checkbox" id="big-letters-size"></td>
+            <td><input type="checkbox" id="big-letters-position"></td>
+            <td> <input type="checkbox" id="big-letters-hide"></td>
             </tr>
             <tr>
             <td class="table-name">Texture</td>
-            <td>TC</td>
-            <td>TS</td>
-            <td>TP</td>
-            <td>TH</td>
+            <td> <input type="checkbox" id="texture-color"></td>
+            <td> <input type="checkbox" id="texture-size"></td>
+            <td> <input type="checkbox" id="texture-position"></td>
+            <td><input type="checkbox" id="texture-hide"></td>
             </tr>
             <tr>
             <td class="table-name">Small phrase</td>
-            <td>SPC</td>
-            <td>SPS</td>
-            <td>SPP</td>
-            <td>SPH</td>
+            <td><input type="checkbox" id="small-phrase-color"></td>
+            <td> <input type="checkbox" id="small-phrase-size"></td>
+            <td> <input type="checkbox" id="small-phrase-position"></td>
+            <td><input type="checkbox" id="small-phrase-hide"></td>
             </tr>
            </table>
-           <ul class="big-letters-settings">
-            <li class="big-letters-title"> Phrase (4 letters only):</li>
-            <li> 
-              <form>
-                <input class="input-big-letters" type="text">
+           <ul class="phrase-settings">
+            <li class="phrase-settings-title"> Phrase:</li>
+            <li class="phrase-settings-item"> 
+              <form class="phrase-placeholder">
+                <input  type="text" placeholder="4 letters only">
               </form>
             </li>
-            <li class="big-letters-settings-item big-letters-get-random" > get random phrase</li>
-            <li class="phrase-settings-item big-letters-fix">fix the phrase</li>
+            <li class="phrase-settings-item">
+              <label for="button">
+              <input class="phrase-settings-get-random" type="checkbox"> get random phrase
+              </label>
+            </li>
            </ul>
         </article>
+        <article class="clear-generate-buttons">
+          <button class="clear-all-settings-button" >Clear all marks</button>
+          <button class="generate-result">Generate</button> 
+
+      </article>
       </main>
       <footer class="footer">
         <p class="footer-text">Created by Sema Zorin in 2024</p>
